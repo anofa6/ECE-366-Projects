@@ -27,7 +27,7 @@ for sequence_number in range(1, 11):
         receievedMessage = clientSocket.recv(1024).decode()
         rtt = time.perf_counter() - start 
         #Print the reply and the RTT in seconds
-        print(receievedMessage, "\t", "RTT = ", f"{rtt:.6f}"  "s")
+        print(receievedMessage, "\t", "RTT = ", f"{rtt:.6f}s")
     except timeout:
         print('Request timed out')
 
